@@ -17,8 +17,8 @@ from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.preprocessing import StandardScaler
 
 NUMBER_OF_CLASSES_HELP_TEXT = """
-The number of classes for the classification problem, will be ignored if problem_type argument is not c.
-Defaults to 10 classes. Notice that since there are not a lot of data in day.csv file the less classes used,
+The number of classes for the classification problem 1 a Defaults to 10 classes. 
+Notice that since there are not a lot of data in day.csv file the less classes used, 
 the better the prediction will be."""
 
 PATH_TO_FILE_HELP_TEXT = """The path to the csv file that will be parsed. 
