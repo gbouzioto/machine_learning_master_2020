@@ -550,8 +550,8 @@ class Exercise1C(ExerciseBase):
         # x will be an instance from the most prominent feature
         most_prominent_feature = self._prominent_features_1a[0]
         # we need to reshape the data since x needs to be 2 dimensional
-        x_feature = most_prominent_feature[:].values.reshape(-1, 1)
-        y_target = self.target[:].values
+        x_feature = most_prominent_feature.values.reshape(-1, 1)
+        y_target = self.target.values
 
         sgd = SGDClassifier(loss="log", learning_rate='constant', eta0=learning_rate,
                             max_iter=1, average=False, random_state=42, verbose=1)
