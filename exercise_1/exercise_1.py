@@ -582,7 +582,8 @@ class Exercise1C(ExerciseBase):
 
         plt.figure()
         plt.plot(p_sum, loss_list)
-        plt.scatter(p_sum, loss_list, color='red')
+        plt.scatter(p_sum, loss_list)
+        plt.scatter(p_sum[:1], loss_list[:1], color='red')
         plt.xlabel(r"$y-\hat{y}$")
         plt.ylabel("Loss")
         plt.savefig(os.path.join('images', f'1c_y_y\'_for_{epochs}_epochs.png'))
